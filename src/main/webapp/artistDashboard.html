@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Web Art Gallery</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body onLoad="getArtworks()">
+	<button onclick="logout()">Log Out</button>
+	<h1>Web Art Gallery</h1>
+	<h2>Welcome, </h2>
+	<h2 id="usernameHeader">asdf</h2>
+	<!-- <img src="./assets/artwork/DP211790.jpg" width="250"> -->
+	<form name="submitArtwork" id="submitArtwork" action="http://localhost:8080/project1/api/artwork/insert"
+		method="POST" enctype="application/json">
+		<input id="username" type="text" name="username" />
+		<br>
+		<label for="title">Artwork Title: </label>
+		<input id="title" type="text" name="title" />
+		<br>
+		<label for="price">Selling Price: </label>
+		<input id="price" type="number" name="price" />
+		<br>
+		<label>Upload Image: </label>
+		<br>
+		<input id="filePath" type="file" name="filePath" />
+		<input type="button" value="Upload" onclick="fileUpload()">
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+	<div id="output">
+		<h2>Your Artwork</h2>
+		<div id="artworks"></div>
+	</div>
+
+
+
+	<script src='credentials.js'></script>
+	<script src='submitArt.js'></script>
+	<script src='personalArt.js'></script>
+</body>
+
+</html>

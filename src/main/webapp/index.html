@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Web Art Gallery</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='app.css'>
+</head>
+
+<body onLoad="getArtworks()">
+	<h1>Web Art Gallery</h1>
+	<div id="login-form">
+		<h2>Login</h2>
+		<form id="loginForm" action="http://localhost:8080/project1/api/auth/" method="POST" onsubmit="login()">
+			<label for="username">Username: </label>
+			<input id="username" type="text" name="username" />
+			<br />
+			<label for="password">Password: </label>
+			<input id="password" type="password" name="password" />
+			<br />
+			<input type="submit" value="Login">
+		</form>
+	</div>
+	<!-- <div id=" movie-form">
+			<h2>Add Movie</h2>
+			<form action="v1/movies" method="POST">
+				<label for="title">Title: </label>
+				<input id="title" type="text" name="title" />
+				<br />
+				<label for="year">Year: </label>
+				<input id="year" type="number" min="1900" max="2019" name="year" placeholder="2019" />
+				<br />
+				<input type="submit" value="Submit">
+				<input type="reset">
+			</form>
+	</div> -->
+	<div id="output">
+		<h2>Artwork List</h2>
+		<div id="artworks"></div>
+	</div>
+	<script src='app.js'></script>
+</body>
+
+</html>

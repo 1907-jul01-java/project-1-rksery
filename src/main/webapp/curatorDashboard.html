@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Web Art Gallery</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body onLoad="getArtworks()">
+	<button onclick="logout()">Log Out</button>
+	<h1>Web Art Gallery</h1>
+	<h2>Welcome,</h2>
+	<h2 id="usernameHeader"></h2>
+	<div id="output">
+		<h2>Artwork List</h2>
+		<div id="artworks"></div>
+	</div>
+	<!-- <script src='app.js'></script> -->
+	<script src='credentials.js'></script>
+	<script src='approvals.js'></script>
+</body>
+
+</html>
