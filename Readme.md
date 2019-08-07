@@ -2,18 +2,18 @@
 A Mavenized Java 8 web application connected to a PostgreSQL database.
 
 ### Tools & APIs
-- [] Java SE 8
-- [] Maven 3+
-- [] JDBC 4+
-- [] PostgreSQL 9+
-- [] Servlet 2.5+
-- [] Tomcat 7+
-- [] HTML/JS/CSS
-- [] AJAX
+- [x] Java SE 8
+- [x] Maven 3+
+- [x] JDBC 4+
+- [x] PostgreSQL 9+
+- [x] Servlet 2.5+
+- [x] Tomcat 7+
+- [x] HTML/JS/CSS
+- [x] AJAX
 - [] JUnit 4
 - [] log4j 
 - [] Optional:
-    - [] Docker, Docker-Compose
+    - [x] Docker, Docker-Compose
     - [] Angular 8
     - [] Bootstrap
     - [] Remote hosting (AWS EC2/RDS)
@@ -34,12 +34,12 @@ A Mavenized Java 8 web application connected to a PostgreSQL database.
     - [] Single Page Application
 
 ### Functionality
-- [] CRUD - Create, Read, Update, Delete
-- [] Web App dashboard interface
+- [x] CRUD - Create, Read, Update, Delete
+- [x] Web App dashboard interface
 - [] Asynchronous interface updates
-- [] Login - Authentication & Authorization
-- [] Database persistance
-- [] Session management
+- [x] Login - Authentication & Authorization
+- [x] Database persistance
+- [x] Session management
 
 ### Presentation
 - [] Prepare a demonstration of functionality requirements through a browser
